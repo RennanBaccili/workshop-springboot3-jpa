@@ -32,6 +32,11 @@ public class OrderIntemPK implements Serializable {
 	}
 
 
+	public OrderIntemPK() {
+		// TODO Auto-generated constructor stub
+ 	}
+
+
 	public Order getOrder() {
 		return order;
 	}
