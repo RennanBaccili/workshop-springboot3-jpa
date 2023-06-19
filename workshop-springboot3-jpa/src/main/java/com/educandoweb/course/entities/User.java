@@ -31,6 +31,7 @@ public class User implements Serializable {
 	private List<Order> orders = new ArrayList<>(); 
 	// um usuario pode ter muitas ordens de pedidos
 	
+	
 	public User() {
 	}
 
