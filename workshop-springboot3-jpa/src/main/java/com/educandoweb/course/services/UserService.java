@@ -26,4 +26,9 @@ public class UserService {
 		Optional <User> obj = repository.findById(id);
 		return obj.get(); // vai me retornar obj do tipo user que estiver dentro do obj
 	}
+	
+	//retorna um usuario salvo
+	public User insert(User obj) {
+		return repository.save(obj);
+	}
 }

@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,7 +15,7 @@ import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "payment") // classe dependente do Order
+@Table(name = "tb_payment") // classe dependente do Order
 public class Payment implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
@@ -23,6 +25,7 @@ public class Payment implements Serializable{
 	private Instant moment;
 	
 	//Associação 1 para 1 com a classe Order
+	@JsonIgnore
 	@OneToOne
 	@MapsId
 	private Order order;
