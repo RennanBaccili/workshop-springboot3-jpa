@@ -43,8 +43,10 @@ Objetivos:
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 17
+Pré-requisitos 17
 
-```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+#Autor
+Rennan Bacili
+
+https://www.linkedin.com/in/rennan-bacili-82763126b/
+
