@@ -24,6 +24,8 @@ public class ResourceExceptionHandler {
 		return ResponseEntity.status(status).body(err);
 	}
 	
+	//Exception do delete
+	
 	@ExceptionHandler(DatabaseException.class)
 	public ResponseEntity<StandardError> databaseException(DatabaseException e, HttpServletRequest request){
 		String error = "Database error";
